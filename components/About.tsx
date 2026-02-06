@@ -13,7 +13,7 @@ function SectionTitle({
   subtitle?: string;
 }) {
   return (
-    <div className="mx-auto mb-12 max-w-3xl text-center">
+    <div className="mx-auto mb-8 max-w-3xl text-center">
       <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-blue-950">
         {title}
       </h2>
@@ -24,7 +24,7 @@ function SectionTitle({
         </p>
       )}
 
-      <div className="mx-auto mt-6 h-1 w-24 rounded bg-blue-950/20" />
+      <div className="mx-auto mt-6 h-1 w-24 rounded bg-teal-500/70" />
     </div>
   );
 }
@@ -55,7 +55,7 @@ export default function About() {
   }, [open]);
 
   return (
-    <section id="about" className="bg-white py-16">
+    <section id="about" className="bg-white py-8">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title="About Us" />
 
@@ -65,7 +65,7 @@ export default function About() {
           
           {/* LEFT — COPY */}
           <div className="text-slate-700 leading-relaxed">
-            <p className="text-base sm:text-lg">
+            <p className="text-base sm:text-lg text-justify">
               Inpsyte, LLC, is owned and operated by Dr. Jason Weisman. We offer
               a variety of psychological services across assessment and
               evaluation, treatment, consultation, and training in order to help
@@ -74,12 +74,12 @@ export default function About() {
             </p>
 
             {/* BUTTON */}
-            <div className="mt-6">
+            <div className="mt-6 flex justify-center">
               <button
                 onClick={() => setOpen((v) => !v)}
                 aria-expanded={open}
                 aria-controls={contentId}
-                className="inline-flex items-center gap-2 rounded-md bg-blue-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-900"
+                className="inline-flex justify-center items-center gap-2 rounded-md bg-teal-400/90 uppercase px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-900"
               >
                 {open ? "Hide Credentials" : "Credentials & Experience"}
 
@@ -104,11 +104,11 @@ export default function About() {
               className="mt-6 overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition-all duration-300"
             >
               <div ref={innerRef} className="p-6">
-                <h3 className="text-lg font-bold text-blue-950">
+                <h3 className="text-xl font-bold text-blue-950">
                   Credentials and Experience
                 </h3>
 
-                <p className="mt-3 text-sm leading-relaxed">
+                <p className="mt-3 leading-relaxed">
                   Jason Weisman, Psy.D., earned a bachelor’s degree (B.A.) in
                   psychology from the University of Cincinnati in 2005, a
                   master’s degree in clinical psychology (M.A.) from the
@@ -117,7 +117,7 @@ export default function About() {
                   Psychology in 2015.
                 </p>
 
-                <p className="mt-3 text-sm leading-relaxed">
+                <p className="mt-3 leading-relaxed">
                   He trained at the Forensic Psychiatry Center for Western Ohio
                   during his internship and two-year postdoctoral fellowship.
                   Dr. Weisman has conducted psychotherapy and psychological
