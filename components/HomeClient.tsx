@@ -30,7 +30,7 @@ function Hero() {
   return (
     <section className="relative" aria-label="Hero">
       <div className="relative h-[420px] w-full md:h-[520px]">
-        <Image src="/hero.png" alt="" fill className="object-cover" priority />
+        <Image src="/hero_1.png" alt="" fill className="object-cover" priority />
         {/* Professional vertical gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b 
             from-gray-200/50 
