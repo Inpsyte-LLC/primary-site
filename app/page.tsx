@@ -20,27 +20,34 @@ function TopBar() {
             1320 Nagel Road PO Box 54864, Cincinnati, OH 45255
           </span>
         </div>
-        <Link href="#top" className="hidden md:flex items-center">
-            <div className="relative h-35 w-64">
-              <Image
-                src="/logo-placeholder.png"
-                alt="Inpsyte"
-                fill
-                className="object-contain"
-                priority
-                unoptimized
-              />
-            </div>
-          </Link>
+
+        <Link href="#top" className="hidden md:flex items-center" aria-label="Go to top">
+          <div className="relative h-35 w-64">
+            <Image
+              src="/logo-placeholder.png"
+              alt="Inpsyte"
+              fill
+              className="object-contain"
+              priority
+              unoptimized
+            />
+          </div>
+        </Link>
 
         <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1">
-          <a className="inline-flex items-center gap-2 hover:underline" href="tel:15136044378">
+          <a
+            className="inline-flex items-center gap-2 hover:underline"
+            href="tel:15136044378"
+          >
             <span className="material-symbols-outlined text-teal-500">
               phone_enabled
             </span>
             (513) 604-4378
           </a>
-          <a className="inline-flex items-center gap-2 hover:underline" href="mailto:weisman.inpsyte@inpsytellc.org">
+          <a
+            className="inline-flex items-center gap-2 hover:underline"
+            href="mailto:weisman.inpsyte@inpsytellc.org"
+          >
             <span className="material-symbols-outlined text-teal-500">
               mail
             </span>
@@ -52,20 +59,22 @@ function TopBar() {
   );
 }
 
-function SectionTitle({ title, subtitle }: { title: string; subtitle?: string }) {
-  return (
-    <div className="mx-auto max-w-3xl text-center">
-      <h2 className="text-4xl font-extrabold tracking-tight text-inpsyte-navy">{title}</h2>
-      {subtitle ? <p className="mt-4 text-base leading-relaxed text-slate-600">{subtitle}</p> : null}
-      <div className="mx-auto mt-8 h-1 w-24 rounded bg-inpsyte-teal/70" />
-    </div>
-  );
-}
-
 export default function Page() {
   return (
-    <main id="top">
+    <main id="top" tabIndex={-1} aria-label="Top">
+      {/* Skip link for keyboard users */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[500] focus:rounded-md focus:bg-white focus:px-4 focus:py-3 focus:text-sm focus:font-bold focus:text-blue-950 focus:shadow-soft"
+      >
+        Skip to main content
+      </a>
+
       <TopBar />
+
+      {/* Target for skip link; focusable so screen readers/keyboard users land cleanly */}
+      <div id="main-content" tabIndex={-1} />
+
       <HomeClient />
       <About />
       <Services />

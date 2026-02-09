@@ -55,7 +55,7 @@ export default function About() {
   }, [open]);
 
   return (
-    <section id="about" className="bg-white py-8">
+    <section id="about" tabIndex={-1} className="bg-white py-8" aria-label="About">
       <div className="mx-auto max-w-6xl px-4">
         <SectionTitle title="About Us" />
 

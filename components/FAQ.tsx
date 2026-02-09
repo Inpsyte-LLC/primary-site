@@ -54,7 +54,7 @@ const FAQS: FAQItem[] = [
 
 export default function FAQ() {
   return (
-    <section id="faqs" className="bg-white py-8 sm:py-12">
+    <section id="faqs" tabIndex={-1} className="bg-white py-8 sm:py-12" aria-label="FAQs">
       <div className="mx-auto max-w-6xl container-px">
         {/* Title */}
         <div className="mx-auto max-w-3xl text-center">

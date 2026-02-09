@@ -1,9 +1,9 @@
-//components/Footer.tsx
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+// components/Footer.tsx
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-type Props = {}
+type Props = {};
 
 const Footer = (props: Props) => {
   return (
@@ -20,16 +20,41 @@ const Footer = (props: Props) => {
                 unoptimized
               />
             </div>
-            <p className="mt-4 text-sm text-white/80 uppercase">Your source for psychological services in the greater Cincinnati area.</p>
+            <p className="mt-4 text-sm text-white/80 uppercase">
+              Your source for psychological services in the greater Cincinnati area.
+            </p>
           </div>
 
           <div>
             <h3 className="text-sm font-extrabold tracking-wide">Useful Links</h3>
             <ul className="mt-4 space-y-2 text-sm text-white/80">
-              <li><Link className="hover:text-white" href="#top">Home</Link></li>
-              <li><Link className="hover:text-white" href="#services">Services</Link></li>
-              <li><Link className="hover:text-white" href="#faqs">FAQs</Link></li>
-              <li><Link className="hover:text-white" href="#contact">Contact Us</Link></li>
+              <li>
+                <Link className="hover:text-white" href="#top">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-white" href="#services">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-white" href="#faqs">
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-white" href="#contact">
+                  Contact Us
+                </Link>
+              </li>
+
+              {/* NEW */}
+              <li>
+                <Link className="hover:text-white underline underline-offset-4" href="/accessibility">
+                  Accessibility
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -37,8 +62,16 @@ const Footer = (props: Props) => {
             <h3 className="text-sm font-extrabold tracking-wide">Contact & Location</h3>
             <div className="mt-4 space-y-2 text-sm text-white/80">
               <p>1320 Nagel Road PO Box 54864, Cincinnati, OH 45255</p>
-              <p><a className="hover:text-white" href="tel:15136044378">(513) 604-4378</a></p>
-              <p><a className="hover:text-white" href="mailto:weisman.inpsyte@inpsytellc.org">weisman.inpsyte@inpsytellc.org</a></p>
+              <p>
+                <a className="hover:text-white" href="tel:15136044378">
+                  (513) 604-4378
+                </a>
+              </p>
+              <p>
+                <a className="hover:text-white" href="mailto:weisman.inpsyte@inpsytellc.org">
+                  weisman.inpsyte@inpsytellc.org
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -48,7 +81,7 @@ const Footer = (props: Props) => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

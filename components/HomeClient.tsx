@@ -4,13 +4,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import MobileMenu from "@/components/MobileMenu";
+import AccessibilityMenu from "@/components/AccessibilityMenu";
 
 function NavBar() {
   return (
     <header className="sticky top-0 z-40 bg-white p-1">
       <div className="mx-auto max-w-6xl container-px">
         <div className="flex items-center justify-between">
-          <nav className="hidden w-full justify-center items-center gap-10 text-lg font-semibold text-blue-950 uppercase md:flex">
+          <nav className="hidden w-full justify-center items-center gap-10 text-lg font-semibold text-blue-950 uppercase md:flex" aria-label="Primary">
             <Link className="hover:text-inpsyte-teal" href="#top">Home</Link>
             <Link className="hover:text-inpsyte-teal" href="#services">Services</Link>
             <Link className="hover:text-inpsyte-teal" href="#faqs">FAQs</Link>
@@ -30,7 +31,7 @@ function Hero() {
   return (
     <section className="relative" aria-label="Hero">
       <div className="relative h-[420px] w-full md:h-[520px]">
-        <Image src="/hero_1.png" alt="" fill className="object-cover" priority />
+        <Image src="/hero_1.png" alt="Insight and Psychotherapy Books with Notebook" fill className="object-cover" priority />
         {/* Professional vertical gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b 
             from-gray-200/50 
@@ -79,15 +80,7 @@ function Hero() {
 
       <div className="pointer-events-none absolute bottom-6 right-6 hidden md:block">
         <div className="pointer-events-auto rounded-full bg-white shadow-soft">
-          <button
-            type="button"
-            className="h-12 w-12 rounded-full text-xl"
-            aria-label="Accessibility options"
-            title="Accessibility"
-            onClick={() => {}}
-          >
-            ♿
-          </button>
+          <AccessibilityMenu />
         </div>
       </div>
     </section>

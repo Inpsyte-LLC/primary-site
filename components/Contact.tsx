@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-white px-2 py-16 sm:py-20">
+    <section id="contact" tabIndex={-1} className="bg-white px-2 py-16 sm:py-20" aria-label="Contact">
       <div className="mx-auto max-w-6xl container-px">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">

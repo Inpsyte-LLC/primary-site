@@ -19,8 +19,44 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Larger text */
+html.a11y-large-text {
+  font-size: 112.5%; /* ~18px base if 16px default */
+}
+
+/* High contrast: keep it conservative to avoid breaking brand too much */
+html.a11y-high-contrast body {
+  color: #0b1220;
+}
+html.a11y-high-contrast a {
+  text-decoration: underline;
+}
+
+/* Reduce motion */
+html.a11y-reduce-motion *,
+html.a11y-reduce-motion *::before,
+html.a11y-reduce-motion *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+/* Strong, consistent keyboard focus ring */
+:where(a, button, input, textarea, select, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 3px solid rgba(20, 184, 166, 0.65); /* teal-ish */
+  outline-offset: 3px;
+}
+
+

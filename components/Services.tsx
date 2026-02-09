@@ -94,7 +94,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="bg-gray-200 py-8 sm:py-12">
+    <section id="services" tabIndex={-1} className="bg-gray-200 py-8 sm:py-12" aria-label="Our Services">
       <div className="mx-auto max-w-6xl container-px">
         <SectionTitle
           title="Our Services"
@@ -112,7 +112,7 @@ export default function Services() {
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gray-100">
               <Image
                 src="/assessment.png"
-                alt="Assessment icon"
+                alt="Assessment and Evaluation"
                 width={48}
                 height={48}
                 className="object-contain"
@@ -141,7 +141,7 @@ export default function Services() {
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gray-100">
               <Image
                 src="/psychology.png"
-                alt="Psychology icon"
+                alt="Therapy Services"
                 width={48}
                 height={48}
                 className="object-contain"
@@ -170,7 +170,7 @@ export default function Services() {
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gray-100">
               <Image
                 src="/workshops.png"
-                alt="Workshops icon"
+                alt="Workshops, Seminars, & Consultation"
                 width={48}
                 height={48}
                 className="object-contain"
