@@ -68,7 +68,7 @@ export default function Contact() {
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-extrabold tracking-tight text-blue-950">
-            Get in Touch 
+            Get in Touch  
           </h2>
 
           <p className="mt-4 text-base leading-relaxed text-slate-700">
