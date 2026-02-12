@@ -6,7 +6,7 @@ type Props = {}
 
 const Privacy = (props: Props) => {
   return (
-    <div>Privacy</div>
+    <div>Privacy, Complete Cookie Yes</div>
   )
 }
 
