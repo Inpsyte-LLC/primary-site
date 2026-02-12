@@ -55,6 +55,21 @@ const Footer = (props: Props) => {
                   Accessibility
                 </Link>
               </li>
+              <li>
+                <Link className="hover:text-white underline underline-offset-4" href="/privacy-policy">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-white underline underline-offset-4" href="cookie-policy">
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-white underline underline-offset-4" href="/terms-of-service">
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
 

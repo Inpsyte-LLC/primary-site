@@ -1,5 +1,5 @@
 //app/terms-of-service/page.tsx
-import React from 'react'
+import Link from "next/link"
 
 type Props = {}
 
@@ -7,7 +7,14 @@ const terms = (props: Props) => {
   return (
     <div className="w-full bg-white text-neutral-800">
         <div className="prose mx-auto max-w-4xl px-4 py-10">
-        <h1>Terms of Service</h1>
+        <Link
+          href="/#top"
+          className="inline-flex items-center text-sm font-semibold text-teal-700 hover:underline"
+        >
+          ← Back to home
+        </Link>
+
+        <h1 className="text-2xl pt-5">Terms of Service</h1>
 
         <p>
             <strong>Last Updated:</strong> February 12, 2026

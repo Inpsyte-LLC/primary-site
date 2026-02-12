@@ -1,10 +1,18 @@
 // app/privacy-policy/page.tsx
+import Link from "next/link";
 
 export default function Privacy() {
   return (
     <div className="w-full bg-white">
       <div className="prose mx-auto max-w-4xl px-4 py-10 text-neutral-800">
-        <h1>Privacy Policy</h1>
+        <Link
+          href="/#top"
+          className="inline-flex items-center text-sm font-semibold text-teal-700 hover:underline"
+        >
+          ← Back to home
+        </Link>
+
+        <h1 className="text-2xl pt-5">Privacy Policy</h1>
         <p><strong>Last Updated:</strong> February 12, 2026</p>
         <p><strong>Effective Date:</strong> February 12, 2026</p>
         <p>

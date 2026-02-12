@@ -1,11 +1,19 @@
 // app/cookie-policy/page.tsx
 import ConsentPreferencesButton from "@/components/ConsentPreferencesButton";
+import Link from "next/link";
 
 export default function CookiePolicyPage() {
   return (
     <div className="w-full bg-white text-neutral-800">
       <div className="prose mx-auto max-w-4xl px-4 py-10">
-        <h1>Cookie Policy</h1>
+        <Link
+          href="/#top"
+          className="inline-flex items-center text-sm font-semibold text-teal-700 hover:underline"
+        >
+          ← Back to home
+        </Link>
+
+        <h1 className="text-2xl pt-5">Cookie Policy</h1>
 
         <p>
           <strong>Effective date:</strong> February 12, 2026
