@@ -1,79 +1,184 @@
-//app/cookie/page.tsx
+// app/cookie-policy/page.tsx
+import ConsentPreferencesButton from "@/components/ConsentPreferencesButton";
 
-import React from 'react'
-
-type Props = {}
-
-const Cookie = (props: Props) => {
+export default function CookiePolicyPage() {
   return (
-    <div>Cookie Policy
+    <div className="w-full bg-white text-neutral-800">
+      <div className="prose mx-auto max-w-4xl px-4 py-10">
+        <h1>Cookie Policy</h1>
 
-Effective date: February 12, 2026
-Last updated: February 12, 2026
+        <p>
+          <strong>Effective date:</strong> February 12, 2026
+          <br />
+          <strong>Last updated:</strong> February 12, 2026
+        </p>
 
-What are cookies?
+        <h2>What are cookies?</h2>
+        <p>
+          This Cookie Policy explains what cookies are and how we use them. Cookies
+          are small text files used to store small pieces of information. They are
+          stored on your device when a website loads in your browser.
+        </p>
+        <p>
+          Cookies help websites function properly, improve security, provide a
+          better user experience, and understand site performance so we can improve
+          content and usability.
+        </p>
 
-This Cookie Policy explains what cookies are and how we use them. Cookies are small text files used to store small pieces of information. They are stored on your device when a website loads in your browser.
+        <h2>How do we use cookies?</h2>
+        <p>Like most websites, we use first-party and third-party cookies for different purposes:</p>
+        <ul>
+          <li>
+            <strong>First-party cookies</strong> are typically necessary for the
+            website to function properly and for saving your cookie consent
+            choices. These cookies generally do not store personally identifiable
+            information.
+          </li>
+          <li>
+            <strong>Third-party cookies</strong> (such as analytics cookies) help
+            us understand how visitors use the site (e.g., pages viewed, time on
+            site, and traffic sources) so we can improve the site.
+          </li>
+        </ul>
 
-Cookies help websites function properly, improve security, provide a better user experience, and understand site performance so we can improve content and usability.
+        <p>
+          We do not use cookies for logging into accounts (this website does not
+          provide login functionality).
+        </p>
 
-How do we use cookies?
+        <h2>Types of cookies we use</h2>
 
-Like most websites, we use first-party and third-party cookies for different purposes:
+        <h3>Necessary</h3>
+        <p>
+          Necessary cookies help make the website usable by enabling basic
+          functions like page navigation and saving your consent preferences. The
+          website cannot function properly without these cookies.
+        </p>
+        <p>
+          These may include cookies or local storage entries used by our consent
+          management platform (CookieYes) to remember your choices.
+        </p>
+        <p>
+          <em>
+            Note: The exact names of necessary cookies can vary depending on your
+            configuration and whether CookieYes updates their implementation.
+          </em>
+        </p>
 
-First-party cookies are typically necessary for the website to function properly and for saving your cookie consent choices. These cookies generally do not store personally identifiable information.
+        <h3>Analytics</h3>
+        <p>
+          Analytics cookies help us understand how visitors interact with the
+          website. The information collected is used to compile reports and help us
+          improve the site.
+        </p>
+        <p>
+          If enabled, this site may use Google Analytics, which can set cookies such as:
+        </p>
 
-Third-party cookies (such as analytics cookies) help us understand how visitors use the site (e.g., pages viewed, time on site, and traffic sources) so we can improve the site.
+        <div className="overflow-x-auto">
+          <table>
+            <thead>
+              <tr>
+                <th>Cookie</th>
+                <th>Duration</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>_ga</code></td>
+                <td>2 years</td>
+                <td>Used by Google Analytics to distinguish users and measure site usage.</td>
+              </tr>
+              <tr>
+                <td><code>_ga_*</code></td>
+                <td>2 years</td>
+                <td>Used by Google Analytics to store and count page views / session data (property-specific).</td>
+              </tr>
+              <tr>
+                <td><code>_gid</code></td>
+                <td>24 hours</td>
+                <td>Used by Google Analytics to distinguish users for reporting.</td>
+              </tr>
+              <tr>
+                <td><code>_gat</code></td>
+                <td>1 minute</td>
+                <td>Used by Google Analytics to throttle request rate.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-We do not use cookies for logging into accounts (this website does not provide login functionality).
+        <p>
+          <strong>Important:</strong> Actual cookies may differ depending on whether
+          you use Google Analytics directly, Google Tag Manager, Consent Mode, and
+          the specific GA configuration. CookieYes can scan and populate the live
+          cookie list.
+        </p>
 
-Types of cookies we use
-Necessary
+        <h2>Manage cookie preferences</h2>
 
-Necessary cookies help make the website usable by enabling basic functions like page navigation and saving your consent preferences. The website cannot function properly without these cookies.
+        <h3>Consent Preferences</h3>
+        <p>
+          You can change your cookie settings at any time by clicking the{" "}
+          <strong>“Consent Preferences”</strong> button (or by reopening the cookie
+          banner). This lets you review, update, or withdraw your consent.
+        </p>
 
-These may include cookies or local storage entries used by our consent management platform (CookieYes) to remember your choices.
+        {/* Optional: If you want a visible button on the page */}
+        <p className="not-prose">
+          <ConsentPreferencesButton />
+        </p>
 
-Note: The exact names of necessary cookies can vary depending on your configuration and whether CookieYes updates their implementation.
 
-Analytics
+        <h3>Browser controls</h3>
+        <p>
+          You can also control cookies through your browser settings. Most browsers
+          allow you to view, manage, delete, and block cookies for a website.
+        </p>
 
-Analytics cookies help us understand how visitors interact with the website. The information collected is used to compile reports and help us improve the site. Analytics data is collected in a way intended to be non-identifying (for example, using aggregated reporting and/or anonymized identifiers where available).
+        <ul>
+          <li>
+            Chrome:{" "}
+            <a href="https://support.google.com/accounts/answer/32050" target="_blank" rel="noreferrer">
+              https://support.google.com/accounts/answer/32050
+            </a>
+          </li>
+          <li>
+            Safari:{" "}
+            <a href="https://support.apple.com/en-in/guide/safari/sfri11471/mac" target="_blank" rel="noreferrer">
+              https://support.apple.com/en-in/guide/safari/sfri11471/mac
+            </a>
+          </li>
+          <li>
+            Firefox:{" "}
+            <a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox" target="_blank" rel="noreferrer">
+              https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox
+            </a>
+          </li>
+          <li>
+            Internet Explorer:{" "}
+            <a
+              href="https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc
+            </a>
+          </li>
+        </ul>
 
-If enabled, this site may use Google Analytics, which can set cookies such as:
+        <h2>Updates to this Cookie Policy</h2>
+        <p>
+          We may update this Cookie Policy from time to time to reflect changes in
+          technology, law, or our website practices. When we do, we will revise the
+          “Last updated” date at the top of this page.
+        </p>
 
-Cookie	Duration	Description
-_ga	2 years	Used by Google Analytics to distinguish users and measure site usage.
-_ga_*	2 years	Used by Google Analytics to store and count page views / session data (property-specific).
-_gid	24 hours	Used by Google Analytics to distinguish users for reporting.
-_gat	1 minute	Used by Google Analytics to throttle request rate.
-
-Important: Actual cookies may differ depending on whether you use Google Analytics directly, Google Tag Manager, Consent Mode, and the specific GA configuration. CookieYes can scan and populate the live cookie list.
-
-Manage cookie preferences
-Consent Preferences
-
-You can change your cookie settings at any time by clicking the “Consent Preferences” button (or by reopening the cookie banner). This lets you review, update, or withdraw your consent.
-
-Browser controls
-
-You can also control cookies through your browser settings. Most browsers allow you to view, manage, delete, and block cookies for a website.
-
-Browser help pages:
-
-Chrome: https://support.google.com/accounts/answer/32050
-Safari: https://support.apple.com/en-in/guide/safari/sfri11471/mac
-Firefox: https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox
-Internet Explorer: https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc
-
-Updates to this Cookie Policy
-
-We may update this Cookie Policy from time to time to reflect changes in technology, law, or our website practices. When we do, we will revise the “Last updated” date at the top of this page.
-
-Optional footer line (if you want to mirror your SaaS page)
-
-“Cookie Policy generated/managed using CookieYes.”</div>
-  )
+        <p>
+          <em>Cookie Policy generated/managed using CookieYes.</em>
+        </p>
+      </div>
+    </div>
+  );
 }
-
-export default Cookie
