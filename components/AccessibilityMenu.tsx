@@ -100,7 +100,7 @@ export default function AccessibilityMenu() {
           <button
             ref={openerRef}
             type="button"
-            className="h-12 w-12 rounded-full text-xl outline-none focus:ring-4 focus:ring-teal-500/30"
+            className="h-12 w-12 bg-blue-900 rounded-full flex items-center justify-center text-xl outline-none focus:ring-4 focus:ring-teal-500/30"
             aria-haspopup="dialog"
             aria-expanded={open}
             aria-controls="a11y-dialog"
@@ -108,7 +108,9 @@ export default function AccessibilityMenu() {
             title="Accessibility options"
             onClick={() => setOpen(true)}
           >
-            ♿
+            <span className="material-symbols-outlined">
+              accessibility_new
+            </span>
           </button>
         </div>
       </div>
