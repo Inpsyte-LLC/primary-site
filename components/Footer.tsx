@@ -21,7 +21,7 @@ const Footer = (props: Props) => {
               />
             </div>
             <p className="mt-4 text-sm text-white/80 uppercase">
-              Your source for psychological services in the greater Cincinnati area.
+              Providing professional psychological services to individuals and families in the Cincinnati area.
             </p>
           </div>
 

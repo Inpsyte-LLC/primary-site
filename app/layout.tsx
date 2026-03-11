@@ -15,9 +15,30 @@ const geistMono = Geist_Mono({
   variable: "--font-mono",
 });
 
+
 export const metadata: Metadata = {
-  title: "Inpsyte",
-  description: "Psychological services in the greater Cincinnati area",
+  metadataBase: new URL("https://inpsytellc.org"),
+  title: "Psychological Services in Cincinnati, OH | InPsyte LLC",
+  description:
+    "Professional psychological services in Cincinnati, Ohio. InPsyte LLC provides expert psychological care and support.",
+  keywords: [
+    "psychologist Cincinnati",
+    "psychological services Cincinnati",
+    "therapy Cincinnati Ohio",
+    "mental health Cincinnati",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Psychological Services in Cincinnati, OH | InPsyte LLC",
+    description:
+      "Professional psychological services in Cincinnati, Ohio. InPsyte LLC provides expert psychological care and support.",
+    url: "https://inpsytellc.org",
+    siteName: "InPsyte LLC",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

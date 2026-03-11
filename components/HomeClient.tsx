@@ -29,9 +29,9 @@ function NavBar() {
 
 function Hero() {
   return (
-    <section className="relative" aria-label="Hero">
+    <section className="relative" aria-label="Psychological services in Cincinnati">
       <div className="relative h-[420px] w-full md:h-[520px]">
-        <Image src="/hero_1.png" alt="Insight and Psychotherapy Books with Notebook" fill className="object-cover" priority />
+        <Image src="/hero_1.png" alt="Psychological services and therapy resources in Cincinnati Ohio" fill className="object-cover" priority />
         {/* Professional vertical gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b 
             from-gray-200/50 
@@ -44,13 +44,14 @@ function Hero() {
       <div className="absolute inset-0 flex items-center px-2">
         <div className="mx-auto w-full max-w-6xl container-px">
           <div className=" text-blue-950 w-full">
+            
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl w-full">
-              Welcome to Inpsyte (/in-sight/)
+              Psychological Services in Cincinnati, Ohio
             </h1>
 
-            <p className="mt-4 text-lg leading-relaxed text-neutral-700 sm:text-3xl font-semibold text-strong">
-              Your source for psychological services in the greater Cincinnati area.
-            </p>
+            <h2 className="mt-4 text-lg leading-relaxed text-neutral-700 sm:text-3xl font-semibold text-strong">
+              Welcome to InPsyte — Professional Psychological Care
+            </h2>
 
             <div className="mt-6 space-y-3 text-neutral-700 font-semibold text-lg">
               <p>
@@ -62,7 +63,9 @@ function Hero() {
                 from Greek <span className="italic">“psyche”</span>: breath, principle of life, soul, mind.
               </p>
             </div>
-
+            <p className="sr-only">
+              Licensed psychologist providing psychological services in Cincinnati, Ohio.
+            </p>
             <div className="mt-8">
               <Link
                 href="#contact"
