@@ -75,7 +75,7 @@ export default function Contact() {
             Reach out with questions about services, scheduling, or consultation.
           </p>
 
-          <div className="mx-auto mt-8 h-1 w-24 rounded bg-teal-500/70" />
+          <div className="mx-auto mt-8 h-1 w-24 rounded bg-teal-500/90" />
         </div>
 
         {/* Content */}
@@ -271,7 +271,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="inline-flex w-full justify-center rounded-lg bg-teal-600 px-6 py-3 text-sm font-bold text-white hover:bg-teal-700 focus:ring-4 focus:ring-teal-500/30 disabled:opacity-60"
+                  className="inline-flex w-full justify-center rounded-lg bg-teal-500/90 px-6 py-3 text-sm font-bold text-white hover:bg-teal-700 focus:ring-4 focus:ring-teal-500/30 disabled:opacity-60"
                 >
                   {status === "sending" ? "Sending..." : "Send message"}
                 </button>

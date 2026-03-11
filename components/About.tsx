@@ -24,7 +24,7 @@ function SectionTitle({
         </p>
       )}
 
-      <div className="mx-auto mt-6 h-1 w-24 rounded bg-teal-500/70" />
+      <div className="mx-auto mt-6 h-1 w-24 rounded bg-teal-500/90" />
     </div>
   );
 }
@@ -79,7 +79,7 @@ export default function About() {
                 onClick={() => setOpen((v) => !v)}
                 aria-expanded={open}
                 aria-controls={contentId}
-                className="inline-flex justify-center items-center gap-2 rounded-md bg-teal-400/90 uppercase px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-900"
+                className="inline-flex justify-center items-center gap-2 rounded-md bg-teal-500/90 uppercase px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-900"
               >
                 {open ? "Hide Credentials" : "Credentials & Experience"}
 

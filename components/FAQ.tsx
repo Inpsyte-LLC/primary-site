@@ -64,7 +64,7 @@ export default function FAQ() {
           <p className="mt-4 text-base leading-relaxed text-slate-700">
             Here is the list of questions we’ve been frequently asked:
           </p>
-          <div className="mx-auto mt-8 h-1 w-24 rounded bg-teal-500/70" />
+          <div className="mx-auto mt-8 h-1 w-24 rounded bg-teal-500/90" />
         </div>
 
         {/* FAQ items */}

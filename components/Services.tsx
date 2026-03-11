@@ -23,7 +23,7 @@ export function SectionTitle({
         </p>
       )}
 
-      <div className="mx-auto mt-8 h-1 w-24 rounded bg-teal-500/70" />
+      <div className="mx-auto mt-8 h-1 w-24 rounded bg-teal-500/90" />
     </div>
   );
 }
@@ -259,7 +259,7 @@ export default function Services() {
                 <div className="mt-6">
                   <Link
                     href="#contact"
-                    className="inline-flex items-center uppercase justify-center rounded-md bg-teal-400 px-5 py-3 text-sm font-semibold text-white shadow-soft hover:bg-teal-600"
+                    className="inline-flex items-center uppercase justify-center rounded-md bg-teal-500/90 px-5 py-3 text-sm font-semibold text-white shadow-soft hover:bg-teal-700"
                   >
                     Contact Inpsyte for a custom training
                   </Link>
