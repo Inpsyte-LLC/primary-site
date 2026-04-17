@@ -51,9 +51,9 @@ export default function Contact() {
 
       setStatus("success");
       form.reset();
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus("error");
-      setErrorMsg(err?.message || "Something went wrong.");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
     }
   }
 
@@ -262,7 +262,7 @@ export default function Contact() {
                     name="message"
                     required
                     rows={5}
-                    placeholder="How can we help?*"
+                    placeholder="How can I help?*"
                     className="mt-2 text-black w-full resize-none rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none focus:ring-4 ring-teal-500/30"
                   />
                 </div>
@@ -279,7 +279,7 @@ export default function Contact() {
                 {/* Success */}
                 {status === "success" && (
                   <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
-                    Message sent successfully. We’ll get back to you soon.
+                    Message sent successfully. I’ll get back to you soon.
                   </div>
                 )}
 

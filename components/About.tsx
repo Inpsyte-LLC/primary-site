@@ -57,7 +57,7 @@ export default function About() {
   return (
     <section id="about" tabIndex={-1} className="bg-white py-8" aria-label="About">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionTitle title="About Us" />
+        <SectionTitle title="About Me" />
 
         {/* GRID */}
         <div className="grid gap-12 sm:grid-cols-[1.25fr_.75fr] sm:items-start">
@@ -66,8 +66,8 @@ export default function About() {
           {/* LEFT — COPY */}
           <div className="text-slate-700 leading-relaxed">
             <p className="text-base sm:text-lg text-justify">
-              Inpsyte, LLC, is owned and operated by Dr. Jason Weisman. We offer
-              a variety of psychological services across assessment and
+              I own and operate Inpsyte, LLC. I offer a variety of
+              psychological services across assessment and
               evaluation, treatment, consultation, and training in order to help
               you find insight and clarity in emotional, cognitive, behavioral,
               and general life challenges.
@@ -109,7 +109,7 @@ export default function About() {
                 </h3>
 
                 <p className="mt-3 leading-relaxed">
-                  Jason Weisman, Psy.D., earned a bachelor’s degree (B.A.) in
+                  I earned a bachelor’s degree (B.A.) in
                   psychology from the University of Cincinnati in 2005, a
                   master’s degree in clinical psychology (M.A.) from the
                   University of Dayton in 2013, and a doctorate in clinical
@@ -118,10 +118,10 @@ export default function About() {
                 </p>
 
                 <p className="mt-3 leading-relaxed">
-                  He trained at the Forensic Psychiatry Center for Western Ohio
-                  during his internship and two-year postdoctoral fellowship.
-                  Dr. Weisman has conducted psychotherapy and psychological
-                  evaluations, trainings and workshops, and supervised
+                  I trained at the Forensic Psychiatry Center for Western Ohio
+                  during my internship and two-year postdoctoral fellowship.
+                  I have conducted psychotherapy and psychological evaluations,
+                  trainings and workshops, and supervised
                   doctoral-level trainees and postdoctoral fellows at both
                   community-based outpatient mental health centers and in
                   private practice since 2018.
@@ -141,14 +141,14 @@ export default function About() {
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border border-slate-200">
                 <Image
                   src="/headshot.jpg"
-                  alt="Dr. Jason Weisman"
+                  alt="Licensed psychologist"
                   fill
                   className="object-cover"
                 />
               </div>
 
               <p className="mt-3 text-center text-xs text-slate-500">
-                Dr. Jason Weisman, Psy.D.
+                Licensed psychologist
               </p>
             </div>
           </div>

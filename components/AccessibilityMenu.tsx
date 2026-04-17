@@ -11,6 +11,29 @@ type Settings = {
 };
 
 const STORAGE_KEY = "inpsyte_a11y";
+const DEFAULT_SETTINGS: Settings = {
+  largeText: false,
+  highContrast: false,
+  reduceMotion: false,
+};
+
+function readStoredSettings(): Settings {
+  if (typeof window === "undefined") return DEFAULT_SETTINGS;
+
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return DEFAULT_SETTINGS;
+
+    const parsed = JSON.parse(raw) as Partial<Settings>;
+    return {
+      largeText: !!parsed.largeText,
+      highContrast: !!parsed.highContrast,
+      reduceMotion: !!parsed.reduceMotion,
+    };
+  } catch {
+    return DEFAULT_SETTINGS;
+  }
+}
 
 function applyToDocument(s: Settings) {
   const root = document.documentElement;
@@ -22,34 +45,12 @@ function applyToDocument(s: Settings) {
 
 export default function AccessibilityMenu() {
   const [open, setOpen] = useState(false);
-  const [settings, setSettings] = useState<Settings>({
-    largeText: false,
-    highContrast: false,
-    reduceMotion: false,
-  });
+  const [settings, setSettings] = useState<Settings>(readStoredSettings);
 
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const openerRef = useRef<HTMLButtonElement | null>(null);
 
-  // Load/save settings
-  useEffect(() => {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) {
-        const parsed = JSON.parse(raw) as Partial<Settings>;
-        const next: Settings = {
-          largeText: !!parsed.largeText,
-          highContrast: !!parsed.highContrast,
-          reduceMotion: !!parsed.reduceMotion,
-        };
-        setSettings(next);
-        applyToDocument(next);
-      }
-    } catch {
-      // ignore
-    }
-  }, []);
-
+  // Apply and persist settings.
   useEffect(() => {
     applyToDocument(settings);
     try {
@@ -74,6 +75,7 @@ export default function AccessibilityMenu() {
     if (!open) return;
 
     const prevActive = document.activeElement as HTMLElement | null;
+    const opener = openerRef.current;
     // Focus first control inside dialog
     setTimeout(() => {
       const first = dialogRef.current?.querySelector<HTMLElement>("button, input");
@@ -82,7 +84,7 @@ export default function AccessibilityMenu() {
 
     return () => {
       // restore focus
-      (prevActive ?? openerRef.current)?.focus?.();
+      (prevActive ?? opener)?.focus?.();
     };
   }, [open]);
 

@@ -9,7 +9,7 @@ const FAQS: FAQItem[] = [
     a: (
       <>
         <p>
-          Dr. Weisman currently does not accept insurance. All expenses are
+          I currently do not accept insurance. All expenses are
           typically out-of-pocket; however, some HSA’s may accept psychotherapy
           services. Patients with HSA’s should consult with their HSA provider
           to determine whether or not they may use HSA funds to cover fees.
@@ -22,7 +22,7 @@ const FAQS: FAQItem[] = [
     a: (
       <>
         <p>
-          For psychotherapy, Dr. Weisman charges one standard fee for an
+          For psychotherapy, I charge one standard fee for an
           initial/intake session that includes a diagnostic interview and
           treatment plan. A separate standard fee is charged for additional
           treatment sessions. Those fees are available over the phone or email.
@@ -31,7 +31,7 @@ const FAQS: FAQItem[] = [
           Federal law now requires all providers of psychological services who
           do not accept insurance to provide patients with a Good Faith Estimate
           (GFE) at the outset of treatment that informs the patient of the
-          projected length of treatment and the cost. Dr. Weisman will draft a
+          projected length of treatment and the cost. I will draft a
           GFE during the treatment planning process in the intake session.
         </p>
       </>
@@ -48,7 +48,7 @@ const FAQS: FAQItem[] = [
   },
   {
     q: "Do you do custody evaluations?",
-    a: <p>Dr. Weisman does not conduct custody and/or divorce proceeding-related evaluations.</p>,
+    a: <p>I do not conduct custody and/or divorce proceeding-related evaluations.</p>,
   },
 ];
 
@@ -62,7 +62,7 @@ export default function FAQ() {
             FAQs
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-700">
-            Here is the list of questions we’ve been frequently asked:
+            Here are a few questions I am frequently asked:
           </p>
           <div className="mx-auto mt-8 h-1 w-24 rounded bg-teal-500/90" />
         </div>

@@ -2,17 +2,22 @@
 
 "use client";
 
+type CookieConsentGlobal = Window & {
+  CookieYes?: { show?: () => void };
+  cookieyes?: { show?: () => void };
+};
+
 export default function ConsentPreferencesButton() {
   const handleClick = () => {
     // CookieYes sometimes loads under different globals.
     if (typeof window !== "undefined") {
+      const cookieWindow = window as CookieConsentGlobal;
+
       // try common APIs safely
-      // @ts-ignore
-      window?.CookieYes?.show?.();
+      cookieWindow.CookieYes?.show?.();
 
       // fallback some installs use
-      // @ts-ignore
-      window?.cookieyes?.show?.();
+      cookieWindow.cookieyes?.show?.();
 
       // LAST fallback — reopen banner
       document.dispatchEvent(new Event("cookieyes_show_banner"));

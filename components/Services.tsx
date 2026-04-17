@@ -94,10 +94,10 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" tabIndex={-1} className="bg-gray-200 py-8 sm:py-12" aria-label="Our Services">
+    <section id="services" tabIndex={-1} className="bg-gray-200 py-8 sm:py-12" aria-label="Psychological Services">
       <div className="mx-auto max-w-6xl container-px">
         <SectionTitle
-          title="Our Services"
+          title="Psychological Services"
           subtitle="Explore offerings and jump to details below."
         />
 
@@ -200,10 +200,10 @@ export default function Services() {
             body={
               <>
                 <p>
-                  Dr. Weisman has specialized in assessment and evaluation during his training and career. His work in both criminal and civil evaluations also involves providing expert testimony and routine and specialized consultation with the courts, other legal entities, other agencies, and other psychologists.
+                  I have specialized in assessment and evaluation throughout my training and career. My work in both criminal and civil evaluations also involves providing expert testimony and routine and specialized consultation with the courts, other legal entities, other agencies, and other psychologists.
                 <br />
                 <br />
-                Dr. Weisman’s assessment and evaluation specialties for both adults and children include:
+                My assessment and evaluation specialties for both adults and children include:
                 </p>
 
                 <p className="mt-4 font-semibold text-blue-950">
@@ -225,7 +225,7 @@ export default function Services() {
             body={
               <>
                 <p>
-                  Dr. Weisman has earned a reputation as a highly effective therapist. He developed and led the implementation of an evidence-based trauma-focused treatment package for the Montgomery County Specialty Court dockets during his internship and post-doctoral fellowship. Dr. Weisman’s carefully measured blend of cognitive-behavioral and interpersonal process interventions continue to quickly and effectively help a diverse population with a wide variety of life circumstances and problems. His approach to treatment is targeted and rapid to address specific issues and help a patient quickly improve his/her/their situation and life. Dr. Weisman presently works with individual adult patients and would consider a referral for a patient as young as 16. Group therapy referrals are also presently being accepted for adults. His clinical treatment specialties include:
+                  I have earned a reputation as a highly effective therapist. I developed and led the implementation of an evidence-based trauma-focused treatment package for the Montgomery County Specialty Court dockets during my internship and post-doctoral fellowship. My carefully measured blend of cognitive-behavioral and interpersonal process interventions continues to quickly and effectively help a diverse population with a wide variety of life circumstances and problems. My approach to treatment is targeted and rapid to address specific issues and help a patient quickly improve his/her/their situation and life. I presently work with individual adult patients and would consider a referral for a patient as young as 16. Group therapy referrals are also presently being accepted for adults. My clinical treatment specialties include:
                 </p>
 
                 <p className="mt-4 font-semibold text-blue-950">
@@ -247,7 +247,7 @@ export default function Services() {
             body={
               <>
                 <p>
-                  Dr. Weisman has conducted seminars and workshops for the lay public, police departments, court staff, citizens returning from incarceration, and clinical providers and consumers from around the world on topics that include:
+                  I have conducted seminars and workshops for the lay public, police departments, court staff, citizens returning from incarceration, and clinical providers and consumers from around the world on topics that include:
                 </p>
 
                 <ul className="mt-3 list-disc space-y-1 pl-5">
@@ -272,4 +272,3 @@ export default function Services() {
     </section>
   );
 }
-

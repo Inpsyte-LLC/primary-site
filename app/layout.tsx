@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://inpsytellc.org"),
-  title: "Psychological Services in Cincinnati, OH | InPsyte LLC",
+  title: "Psychological Services in Cincinnati, OH | Inpsyte LLC",
   description:
-    "Professional psychological services in Cincinnati, Ohio. InPsyte LLC provides expert psychological care and support.",
+    "Professional psychological services in Cincinnati, Ohio. Inpsyte LLC provides assessment, therapy, consultation, and training.",
   keywords: [
     "psychologist Cincinnati",
     "psychological services Cincinnati",
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Psychological Services in Cincinnati, OH | InPsyte LLC",
+    title: "Psychological Services in Cincinnati, OH | Inpsyte LLC",
     description:
-      "Professional psychological services in Cincinnati, Ohio. InPsyte LLC provides expert psychological care and support.",
+      "Professional psychological services in Cincinnati, Ohio. Inpsyte LLC provides assessment, therapy, consultation, and training.",
     url: "https://inpsytellc.org",
-    siteName: "InPsyte LLC",
+    siteName: "Inpsyte LLC",
     locale: "en_US",
     type: "website",
   },

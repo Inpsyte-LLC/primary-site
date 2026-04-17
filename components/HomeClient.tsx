@@ -15,7 +15,7 @@ function NavBar() {
             <Link className="hover:text-inpsyte-teal" href="#top">Home</Link>
             <Link className="hover:text-inpsyte-teal" href="#services">Services</Link>
             <Link className="hover:text-inpsyte-teal" href="#faqs">FAQs</Link>
-            <Link className="hover:text-inpsyte-teal" href="#contact">Contact Us</Link>
+            <Link className="hover:text-inpsyte-teal" href="#contact">Contact Me</Link>
           </nav>
 
           <div className="md:hidden w-full">
@@ -50,7 +50,7 @@ function Hero() {
             </h1>
 
             <h2 className="mt-4 text-lg leading-relaxed text-neutral-700 sm:text-3xl font-semibold text-strong">
-              Welcome to InPsyte — Professional Psychological Care
+              Welcome to Inpsyte — Professional Psychological Services
             </h2>
 
             <div className="mt-6 space-y-3 text-neutral-700 font-semibold text-lg">

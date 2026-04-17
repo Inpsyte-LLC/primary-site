@@ -3,9 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className="bg-blue-950 text-white px-2">
       <div className="mx-auto max-w-6xl py-4 container-px">
@@ -45,7 +43,7 @@ const Footer = (props: Props) => {
               </li>
               <li>
                 <Link className="hover:text-white" href="#contact">
-                  Contact Us
+                  Contact Me
                 </Link>
               </li>
 
@@ -92,6 +90,20 @@ const Footer = (props: Props) => {
         </div>
 
         <div className="mt-5 border-t border-white/15 text-center pt-4 text-xs text-white/70">
+          <div className="mb-4 flex justify-center">
+            <a
+              href="https://www.bbb.org/us/oh/cincinnati/profile/psychologist/inpsyte-llc-0292-90043583/#sealclick"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-3 rounded-md border border-white/30 bg-white px-4 py-2 text-left text-blue-950 transition hover:bg-white/90"
+              aria-label="Better Business Bureau"
+            >
+              <span className="text-2xl font-extrabold tracking-wide">BBB</span>
+              <span className="text-xs font-semibold uppercase leading-tight">
+                Better Business Bureau
+              </span>
+            </a>
+          </div>
           Copyright © {new Date().getFullYear()} Inpsyte, LLC.
         </div>
       </div>

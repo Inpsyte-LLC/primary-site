@@ -1,9 +1,7 @@
 //app/terms-of-service/page.tsx
 import Link from "next/link"
 
-type Props = {}
-
-const terms = (props: Props) => {
+const Terms = () => {
   return (
     <div className="w-full bg-white text-neutral-800">
         <div className="prose mx-auto max-w-4xl px-4 py-10">
@@ -275,4 +273,4 @@ const terms = (props: Props) => {
   )
 }
 
-export default terms
+export default Terms

@@ -9,7 +9,7 @@ type Item = { id: string; label: string };
 
 const ITEMS: Item[] = [
   { id: "top", label: "Home" },
-  { id: "about", label: "About Us" },
+  { id: "about", label: "About Me" },
   { id: "services", label: "Services" },
   { id: "faqs", label: "FAQs" },
   { id: "contact", label: "Contact" },
@@ -196,7 +196,7 @@ export default function MobileMenu() {
                 onClick={() => goTo("contact")}
                 className="w-full rounded-xl bg-inpsyte-teal px-6 py-4 text-base font-bold text-white shadow-soft hover:bg-inpsyte-tealDark focus:outline-none focus:ring-2 focus:ring-inpsyte-teal focus:ring-offset-2 focus:ring-offset-inpsyte-navy"
               >
-                Contact Us
+                Contact Me
               </button>
               <p className="mt-3 text-center text-xs text-white/60">
                 Press <span className="font-semibold">Esc</span> to close
