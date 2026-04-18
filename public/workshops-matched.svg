@@ -1,0 +1,17 @@
+<svg width="384" height="384" viewBox="0 0 384 384" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Workshops seminars and consultation</title>
+  <desc id="desc">Three people in a facilitated consultation session with a central idea symbol.</desc>
+  <g stroke="#63D5D3" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="192" cy="84" r="41"/>
+    <path d="M126 202C135 153 158 127 192 127C226 127 249 153 258 202"/>
+    <circle cx="83" cy="174" r="35"/>
+    <path d="M25 291C34 242 54 220 83 220C111 220 132 242 141 291"/>
+    <circle cx="301" cy="174" r="35"/>
+    <path d="M243 291C252 242 272 220 301 220C329 220 350 242 359 291"/>
+    <path d="M158 278H226"/>
+    <path d="M145 325H239"/>
+    <path d="M169 239C169 226 179 216 192 216C205 216 215 226 215 239C215 247 211 254 204 260C199 264 197 269 197 276"/>
+    <path d="M188 276H197"/>
+    <path d="M192 307H192.5"/>
+  </g>
+</svg>

@@ -52,6 +52,8 @@ function ServiceDetail({
 }
 
 export default function Services() {
+  const workshopsIconSrc = "/workshops-collaboration.svg";
+
   const assessmentItems = [
     "General Mental Health Assessment and Evaluation",
     "Intellectual, cognitive, and personality testing",
@@ -169,7 +171,7 @@ export default function Services() {
           >
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gray-100">
               <Image
-                src="/workshops.png"
+                src={workshopsIconSrc}
                 alt="Workshops, Seminars, & Consultation"
                 width={48}
                 height={48}

@@ -1,0 +1,18 @@
+<svg width="384" height="384" viewBox="0 0 384 384" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Collaborative consultation</title>
+  <desc id="desc">A roundtable discussion with three participants in an aqua outline style.</desc>
+  <g stroke="#63D5D3" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="192" cy="76" r="34"/>
+    <circle cx="92" cy="177" r="34"/>
+    <circle cx="292" cy="177" r="34"/>
+    <path d="M143 151C155 132 171 122 192 122C213 122 229 132 241 151"/>
+    <path d="M36 274C47 239 65 222 92 222C119 222 137 239 148 274"/>
+    <path d="M236 274C247 239 265 222 292 222C319 222 337 239 348 274"/>
+    <path d="M111 305H273"/>
+    <path d="M86 335H298"/>
+    <path d="M164 206H220C237 206 251 220 251 237C251 254 237 268 220 268H202L177 290V268H164C147 268 133 254 133 237C133 220 147 206 164 206Z"/>
+    <path d="M166 237H167"/>
+    <path d="M191 237H192"/>
+    <path d="M216 237H217"/>
+  </g>
+</svg>

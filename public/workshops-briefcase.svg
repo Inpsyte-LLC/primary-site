@@ -1,0 +1,13 @@
+<svg width="384" height="384" viewBox="0 0 384 384" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Professional training consultation</title>
+  <desc id="desc">A professional case with a check mark and conversation lines in an aqua outline style.</desc>
+  <g stroke="#63D5D3" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M74 122H310C329 122 344 137 344 156V289C344 308 329 323 310 323H74C55 323 40 308 40 289V156C40 137 55 122 74 122Z"/>
+    <path d="M145 122V93C145 75 159 61 177 61H207C225 61 239 75 239 93V122"/>
+    <path d="M40 190H344"/>
+    <path d="M164 190V217H220V190"/>
+    <path d="M98 262L130 291L187 234"/>
+    <path d="M218 247H286"/>
+    <path d="M218 282H286"/>
+  </g>
+</svg>
