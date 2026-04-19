@@ -15,7 +15,7 @@ function TopBar() {
         <div className="flex w-full min-w-0 flex-wrap justify-center items-center gap-x-4 gap-y-1 sm:w-auto">
           <span className="inline-flex w-full min-w-0 items-center justify-center gap-2 sm:w-auto">
             <span className="material-symbols-outlined shrink-0 text-teal-300 md:text-teal-500">
-              location_on
+              location_on 
             </span>
             <span className="min-w-0 text-center leading-snug sm:text-left">
               <span className="sm:hidden">1320 Nagel Road, Cincinnati, OH</span>
