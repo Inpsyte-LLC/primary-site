@@ -10,14 +10,17 @@ import Footer from "@/components/Footer";
 
 function TopBar() {
   return (
-    <div className="p-1 w-full md:text-black bg-blue-950 md:bg-white">
-      <div className="mx-auto flex max-w-6xl flex-col gap-2 text-[12px] text-inpsyte-slate sm:flex-row sm:items-center justify-center lg:justify-between container-px">
-        <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1">
-          <span className="inline-flex items-center gap-2">
-            <span className="material-symbols-outlined text-teal-500">
+    <div className="w-full bg-blue-950 p-1 text-white md:bg-white md:text-slate-700">
+      <div className="mx-auto flex max-w-6xl flex-col gap-2 px-2 text-[12px] sm:flex-row sm:items-center justify-center lg:justify-between md:container-px">
+        <div className="flex w-full min-w-0 flex-wrap justify-center items-center gap-x-4 gap-y-1 sm:w-auto">
+          <span className="inline-flex w-full min-w-0 items-center justify-center gap-2 sm:w-auto">
+            <span className="material-symbols-outlined shrink-0 text-teal-300 md:text-teal-500">
               location_on
             </span>
-            1320 Nagel Road PO Box 54864, Cincinnati, OH 45255
+            <span className="min-w-0 text-center leading-snug sm:text-left">
+              <span className="sm:hidden">1320 Nagel Road, Cincinnati, OH</span>
+              <span className="hidden sm:inline">1320 Nagel Road PO Box 54864, Cincinnati, OH 45255</span>
+            </span>
           </span>
         </div>
 
@@ -34,24 +37,24 @@ function TopBar() {
           </div>
         </Link>
 
-        <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1">
+        <div className="flex w-full min-w-0 flex-col justify-center items-center gap-1 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-x-4">
           <a
-            className="inline-flex items-center gap-2 hover:underline"
+            className="inline-flex min-w-0 items-center gap-2 hover:underline"
             href="tel:15136044378"
           >
-            <span className="material-symbols-outlined text-teal-500">
+            <span className="material-symbols-outlined shrink-0 text-teal-300 md:text-teal-500">
               phone_enabled
             </span>
-            (513) 604-4378
+            <span className="min-w-0">(513) 604-4378</span>
           </a>
           <a
-            className="inline-flex items-center gap-2 hover:underline"
+            className="inline-flex min-w-0 items-center gap-2 hover:underline"
             href="mailto:weisman.inpsyte@inpsytellc.org"
           >
-            <span className="material-symbols-outlined text-teal-500">
+            <span className="material-symbols-outlined shrink-0 text-teal-300 md:text-teal-500">
               mail
             </span>
-            weisman.inpsyte@inpsytellc.org
+            <span className="min-w-0">weisman.inpsyte@inpsytellc.org</span>
           </a>
         </div>
       </div>

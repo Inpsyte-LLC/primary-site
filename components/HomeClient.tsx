@@ -30,36 +30,37 @@ function NavBar() {
 function Hero() {
   return (
     <section className="relative" aria-label="Psychological services in Cincinnati">
-      <div className="relative h-[420px] w-full md:h-[520px]">
+      <div className="relative h-[460px] w-full md:h-[520px]">
         <Image src="/hero_1.png" alt="Psychological services and therapy resources in Cincinnati Ohio" fill className="object-cover" priority />
         {/* Professional vertical gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b 
-            from-gray-200/50 
-            via-gray-200/70 
+            from-white/80
+            via-gray-200/75
             to-blue-950/90"
         />
 
       </div>
 
-      <div className="absolute inset-0 flex items-center px-2">
+      <div className="absolute inset-0 flex items-start px-4 pt-10 md:items-center md:px-2 md:pt-0">
         <div className="mx-auto w-full max-w-6xl container-px">
-          <div className=" text-blue-950 w-full">
+          <div className="w-full max-w-full overflow-hidden text-blue-950">
             
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl w-full">
-              Psychological Services in Cincinnati, Ohio
+            <h1 className="w-full text-[1.9rem] font-extrabold leading-tight tracking-tight sm:text-5xl">
+              <span className="block sm:inline">Psychological Services</span>{" "}
+              <span className="block sm:inline">in Cincinnati, Ohio</span>
             </h1>
 
-            <h2 className="mt-4 text-lg leading-relaxed text-neutral-700 sm:text-3xl font-semibold text-strong">
+            <h2 className="mt-4 max-w-[20rem] text-sm leading-relaxed text-neutral-700 sm:max-w-none sm:text-3xl font-semibold text-strong">
               Welcome to Inpsyte — Professional Psychological Services
             </h2>
 
-            <div className="mt-6 space-y-3 text-neutral-700 font-semibold text-lg">
+            <div className="mt-6 max-w-[20rem] space-y-3 text-sm font-semibold text-neutral-700 sm:max-w-none sm:text-lg">
               <p>
-                <span className="text-xl italic">Insight:</span>{" "}
+                <span className="text-base italic sm:text-xl">Insight:</span>{" "}
                 an understanding of the inner nature of things or situations.
               </p>
               <p>
-                <span className="text-xl italic">Psych (prefix)</span>{" "}
+                <span className="text-base italic sm:text-xl">Psych (prefix)</span>{" "}
                 from Greek <span className="italic">“psyche”</span>: breath, principle of life, soul, mind.
               </p>
             </div>
