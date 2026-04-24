@@ -102,7 +102,7 @@ export default function AccessibilityMenu() {
           <button
             ref={openerRef}
             type="button"
-            className="h-8 w-8 md:h-10 md:w-10 bg-blue-900 rounded-full flex items-center justify-center text-xl outline-none focus:ring-4 focus:ring-teal-500/30"
+            className="h-8 w-8 md:h-10 md:w-10 bg-blue-900 rounded-full flex items-center justify-center text-xl text-white outline-none focus:ring-4 focus:ring-teal-500/30"
             aria-haspopup="dialog"
             aria-expanded={open}
             aria-controls="a11y-dialog"
